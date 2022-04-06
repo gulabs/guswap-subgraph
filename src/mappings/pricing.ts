@@ -8,6 +8,7 @@ const USDC_WETH_PAIR = '0xda74a2b9cbe674bfe6792f30cff1f261b91f52eb' // created 1
 const DAI_WETH_PAIR = '0x80e57b1423802aae1177dba46b9caf7d02f11fea' // created block 10042267
 const USDT_WETH_PAIR = '0x13b78be549b3811f68bee12037736a444f13d303' // created block 10093341
 
+// TODO: update to support address dynamic token0-token1
 export function getEthPriceInUSD(): BigDecimal {
   // fetch eth prices for each stablecoin
   let daiPair = Pair.load(DAI_WETH_PAIR) // dai is token1
